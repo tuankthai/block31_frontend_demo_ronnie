@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 function App() {
   const [pokemons, setPokemons] = useState([])
   useEffect(() => {
-    //david's code
     function getData() {
       let config = {
         method: 'get',
@@ -21,7 +20,6 @@ function App() {
         console.log(e)
       }
     }
-    //ronnie 's code
     const fetchData = async () => {
       const response = await fetch('http://localhost:8080/all-pokemons');
       const data = await response.json();
